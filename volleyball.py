@@ -17,7 +17,7 @@ def get_inputs():
 
 
 def sim_n_games(n, prob_a, prob_b):
-    # Simulates n games of racquetball between players whose
+    # Simulates n games of volleyball between players whose
     # abilities are represented by the probability of winning a serve.
     # Returns number of wins for A and B
     wins_a = wins_b = 0
@@ -38,7 +38,7 @@ def sim_n_games(n, prob_a, prob_b):
 
 
 def sim_one_game(prob_a, prob_b, serving):
-    # Simulates a single game or racquetball between players whose
+    # Simulates a single game or volleyball between players whose
     # abilities are represented by the probability of winning a serve.
     # Returns final scores for A and B
 
@@ -59,7 +59,7 @@ def sim_one_game(prob_a, prob_b, serving):
 
 
 def game_over(a, b):
-    # a and b represent scores for a racquetball game
+    # a and b represent scores for a volley ball game
     # Returns True if the game is over, False otherwise.
     return (a >= 25 and a - b >= 2) or (b >= 25 and b - a >= 2)
 
